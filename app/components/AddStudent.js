@@ -82,8 +82,8 @@ export default class AddStudent extends Component {
           Select A Campus
           <select type="text" name="campus" required onChange={handleChange}>
             {
-                /* campuses && */ campuses.map(campus => (
-                    <option key={campus.id} value={campus.id}>{campus.id}</option>
+                campuses &&  campuses.map(campus => (
+                    <option key={campus.id} value={campus.id}>{campus.name}</option>
                 ))
             }
           </select>
